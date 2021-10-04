@@ -1,0 +1,55 @@
+.listePiano {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img {
+    width: 100%;
+}
+
+h5{
+    font-size: 1.5rem;
+    border: 3px black solid;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 150px;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: 400ms;
+ }
+ h5:hover{
+     background-color: thistle;
+     transform: scale(1.15);
+ }
+
+.new{
+    font-size: 1.5rem;
+    color: white;
+    background-color: teal;
+    border-radius: 1rem;
+    padding: 5px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
+.reduc {
+    font-size: 1.5rem;
+    color: white;
+    background-color: tomato;
+    border-radius: 1rem;
+    padding:5px;
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+.card{
+    border: 3px black solid;
+    box-shadow: 3px 3px 3px black ;
+    border-radius: 2rem;
+    margin: 50px;
+    position: relative;
+}

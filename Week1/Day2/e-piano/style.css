@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:link {
+    color: white;
+}
+
+.notemusic {
+    font-size:2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.imgpresentation img{
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+}
+
+footer {
+    height: 80px;
+    background-color: grey;
+    margin-top: -20px;
+    padding: 20px 0;
+}
