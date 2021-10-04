@@ -1,0 +1,131 @@
+*, ::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing:0;
+}
+
+.container {
+    height: 700px;
+    width: 800px;
+    margin: 30px auto;
+}
+
+h1{
+    margin: 150px 200px 20px 10px;
+    text-align: start;
+}
+
+.connexionPage{
+    display: flex;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.bodyLogin {
+    background-color: rgb(243, 236, 236);
+    width: 50%;
+    height: 600px;
+}
+
+form {
+margin: 40px auto;
+}
+
+#email, #password {
+    display: block;
+    margin-top: 40px ;
+    margin-left: 20px;
+    font-size: 2rem;
+    width: 90%;
+}
+
+.checkbox, #checkbox {
+    margin: 50px 10px;
+}
+
+.forgot {
+    display: inline;
+    margin-left: 60px;
+    color: black;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: black;
+}
+
+.forgot a:link{
+    color: black;
+}
+
+.submit {
+    display: block;
+    margin:  auto;
+    padding: 10px;
+    width: 300px;
+    background-color: rgb(138, 74, 138);
+    color: white;
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+
+.orConnect{
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    margin: 40px;
+}
+
+.icones {
+    margin: 20px;
+    font-size: 2rem;
+    color:rgb(182, 177, 177);
+}
+
+.recordPage{
+   background: linear-gradient(rgb(44, 3, 44),rgb(138, 74, 138));
+    color: white;
+    width: 50%;
+}
+
+.friend {
+    font-size: 6rem;
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+}
+
+h4{
+    font-weight: lighter;
+    text-align: center;
+}
+
+.register{
+    margin : 30px auto;
+    border: 1px white solid;
+    border-radius: 3rem;
+    text-align: center;
+    padding: 8px;
+    width: 130px;
+}
+
+.register a {
+    color: white;
+    text-decoration: none;
+}
+
+.fleche{
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 2px;
+}
