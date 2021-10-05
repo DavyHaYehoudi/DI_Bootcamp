@@ -1,0 +1,38 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+}
+
+.carre {
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    border: 2px black solid;
+    margin: 5px;
+}
+
+.ilotCentral {
+    display: flex;
+    align-items: center;
+}
+
+.groupe9 {
+    margin: 40px;
+    margin-left: 120px;
+}
+.groupe10 {
+    margin: 40px;
+}
+.groupe11 {
+    margin: 40px;
+}
+.groupe12 {
+    margin: 40px;
+    margin-right: 120px;
+}
