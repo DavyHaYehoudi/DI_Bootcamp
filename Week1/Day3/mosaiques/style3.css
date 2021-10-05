@@ -1,0 +1,24 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.motif {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.unite {
+    width: 30px;
+    height: 30px;
+}
+
+.pourpre {
+    background-color: rgb(221, 177, 160);
+}
+
+.rouge {
+    background-color: rgb(247, 84, 84);
+    
+}

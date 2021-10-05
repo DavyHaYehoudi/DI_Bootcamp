@@ -1,0 +1,35 @@
+
+
+            *,::before,::after{
+                margin:0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .motif {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 1px;
+            }
+
+            .unite {
+                width: 30px;
+                height: 30px;
+                margin: 1px;
+            }
+
+            .gris_clair {
+                background-color: rgb(219, 215, 215);
+            }
+
+            .gris {
+                background-color: grey;
+            }
+
+            .gris_fonce {
+                background-color: rgb(41, 40, 40);
+            }
+
+            .black {
+                background-color: black;
+            }
