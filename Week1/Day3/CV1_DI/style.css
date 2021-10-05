@@ -1,0 +1,69 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+}
+
+.container{
+    max-width: 1000px;
+    height: 90vh;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-areas: 
+    "a b b "
+    ;
+    margin: 60px auto;
+}
+
+.presentation{
+grid-area: a;
+background-color: azure;
+
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.contenu{
+grid-area: b;
+background-color: rgb(247, 232, 214);
+padding: 40px;
+}
+
+img{
+    margin-top: 50px;
+    width: 90%;
+    border-radius: 5rem;
+}
+
+.iconeUl{
+    list-style-type: none;
+}
+
+h3{
+    margin-top: 50px;
+}
+
+.profil{
+    margin-top: 20px;
+}
+
+.listEducation{
+    margin: 30px;
+}
+
+h4{
+    margin-top: 30px;
+}
+
+.listSkills{
+    display: flex;
+    justify-content: space-around ;
+    margin: 30px;
+}
+
