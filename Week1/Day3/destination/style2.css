@@ -1,0 +1,86 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/formulaire.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: rgb(19, 94, 107);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    background-color: rgb(124, 122, 241);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 80px;
+    font-weight: bold;
+    text-shadow: black 2px 2px;
+    font-family: 'Roboto', sans-serif;
+}
+.formulaire{
+    max-width: 600px;
+    height: 40vh;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: teal;
+    color: white;
+}
+
+.tiercet1,.tiercet2{
+    display: flex;
+}
+
+.tiercet{
+    height: 30px;
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.unite {
+    margin: 5px;
+}
+
+.listSelect {
+    width: 590px;
+    height: 30px;
+}
+
+.listUl{
+    list-style-type:none;
+}
+
+.company{
+    margin-top: 20px;
+}
+
+.subscribe-bloc {
+    margin-top: 30px;
+}
+
+.btn-download{
+    display: block;
+    margin: 50px auto;
+}
+

@@ -1,0 +1,102 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/map.png");
+    background-size: cover;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(116, 116, 202);
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+ 
+img {
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    
+}
+
+.colonne1,.colonne2,.colonne3 {
+    width: 33%;
+    height: 70vh;
+    margin: 50px ;
+}
+
+.card {
+    border: 1px black solid;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px black;
+    background-color: white;
+}
+
+.card1 {
+    margin: 250px auto;
+
+}
+.card2 {
+    margin: 350px auto;
+}
+.card3 {
+    margin: 300px auto;
+}
+
+p {
+    margin: 10px;
+    text-align: center;
+}
+
+.bandCard {
+    margin-top: 40px ;
+    padding: 30px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.bandCard1 {
+    background-color: rgb(225, 183, 226);
+
+}
+.bandCard2 {
+    background-color: turquoise;
+
+}
+.bandCard3 {
+    background-color: yellowgreen;
+
+}
+
+@media screen and (max-width:900px){
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.colonne1,.colonne2,.colonne3 {
+    width: 60%;
+    height: 55vh;
+    margin: auto ;
+}
+.card1,.card2,.card3{
+    margin: 30px;
+    height: auto;
+}
+}
