@@ -1,0 +1,141 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("fond_jaune.png");
+}
+
+nav{
+    background-color: rgba(245, 222, 179,0.5);
+}
+
+.collapse{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li{
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.icone{
+    font-size: 2rem;
+}
+
+.icone:hover{
+transform: scale(1.3);
+transition: 400ms;
+}
+
+
+.onglets a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+.separateur{
+    background: url("separateur.png"), repeat-x top;
+    height: 3px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+}
+
+section {
+    text-align: center;
+
+
+}
+
+.welcome{
+    margin: 50px auto;
+}
+
+.welcomediv{
+    border: 2px black solid;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px black;
+    width: 90%;
+    margin: auto;
+    padding: 60px;
+}
+
+.icotop{
+    display: block;
+    margin: -17px auto;
+}
+
+.aboutme{
+    border: 2px black solid;
+    border-radius: 1rem;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 1rem;
+    width: 90%;
+}
+
+.profil{
+    border-radius: 20%;
+    width: 20%;
+    margin: 20px;
+}
+
+.projets{
+    border: 2px black solid;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px black;
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+}
+
+.card{
+    padding: 5px;
+}
+
+.mesprojets{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.mecontacter{
+    margin: 50px auto;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px rgba(24,24,24,0.6);
+    width: 90%;
+}
+
+form{
+    margin: 50px;
+    border-radius: 1rem;
+}
+
+.formulaire{
+    padding: 50px;
+    background:linear-gradient(rgba(24,24,24,0.6),rgba(24,24,24,0.2));
+    border-radius: 1rem;
+}
+
+.btn-submit{
+    width: 100%;
+    color: white;
+    background-color: #760001;
+}
