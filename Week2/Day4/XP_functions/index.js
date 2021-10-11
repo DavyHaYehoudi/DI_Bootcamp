@@ -29,41 +29,41 @@ infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", 
 // Exercice 2 
 //Part1
 
-// let age = prompt("How old are you ?");
+let age = prompt("How old are you ?");
 
-// const checkDriverAge = ()=>{
+const checkDriverAge = ()=>{
 
-//    if( age<18 ){
-//        alert("Sorry, you are too young to drive this car. Powering off")
-//       }
+   if( age<18 ){
+       alert("Sorry, you are too young to drive this car. Powering off")
+      }
 
-//     if( age == 18 ){
-//         alert("Congratulations on your first year of driving. Enjoy the ride!")
-//     }
+    if( age == 18 ){
+        alert("Congratulations on your first year of driving. Enjoy the ride!")
+    }
     
-//     if( age >18 ){
-//         alert("You are old enough to drive, Powering On. Enjoy the ride!")
-//     }
-// }
-// checkDriverAge();
+    if( age >18 ){
+        alert("You are old enough to drive, Powering On. Enjoy the ride!")
+    }
+}
+checkDriverAge();
 
 //Part2
 
-// const checkDriverAge2 = (age2)=>{
+const checkDriverAge2 = (age2)=>{
 
-//     if( age2<18 ){
-//         alert("Sorry, you are too young to drive this car. Powering off")
-//        }
+    if( age2<18 ){
+        alert("Sorry, you are too young to drive this car. Powering off")
+       }
  
-//      if( age2 == 18 ){
-//          alert("Congratulations on your first year of driving. Enjoy the ride!")
-//         }
+     if( age2 == 18 ){
+         alert("Congratulations on your first year of driving. Enjoy the ride!")
+        }
         
-//         if( age2 >18 ){
-//         alert("You are old enough to drive, Powering On. Enjoy the ride!")
-//      }
-//  }
-//  checkDriverAge2(24);
+        if( age2 >18 ){
+        alert("You are old enough to drive, Powering On. Enjoy the ride!")
+     }
+ }
+ checkDriverAge2(24);
 
 // Exercice 3
 
@@ -116,16 +116,16 @@ let amazonBasket = {
     floss: 100
 }
 
-// const checkBasket = ()=>{
-//     let article = prompt("Is this article in the basket ?");
-//     if ( article in amazonBasket){
-//         alert("This article is already in the basket");
-//     }else{
-//         alert("This article is not in the basket")
-//     }
-// }
+const checkBasket = ()=>{
+    let article = prompt("Is this article in the basket ?");
+    if ( article in amazonBasket){
+        alert("This article is already in the basket");
+    }else{
+        alert("This article is not in the basket")
+    }
+}
 
-// checkBasket();
+checkBasket();
 
 //Exercice 6
 let Quarters  = 0.25;
@@ -189,6 +189,97 @@ myBill();
 
 // Exercice 8
 
+let billquestion = prompt("What is the bill ?");
+const tipCalculator =() => {
+    let bill = Number (billquestion);
+    let tip;
+
+    if( bill < 50 ){
+        tip = Number ((bill*0.2).toFixed(1));
+    }
+
+    if( bill > 50 && bill < 200 ){
+        tip = Number ((bill*0.15).toFixed(1));
+    }
+
+    if( bill > 200 ){
+        tip = Number ((bill*0.1).toFixed(1));
+    }
+
+    let finalBill = bill + tip;
+
+    alert("Tip : "+ tip);
+    alert("Final bill : " + finalBill)
+}
+
+tipCalculator();
 
 
 
+// Exercice 9
+let hotelPrice;
+let destinationPrice;
+let carPrice;
+
+function hotelCost(){
+    
+let nights = prompt("How many nights you'd like to stay in the hotel ?");
+
+while(isNaN(nights)  || nights ==""){
+    nights=  prompt("How many nights you'd like to stay in the hotel ?");}
+    
+    hotelPrice = nights*140;
+    return hotelPrice ;
+}
+    
+    
+function planeRideCost() {
+
+let destination = prompt("Where would you want to go ?");
+
+while(destination == "" || !(isNaN(destination))){
+destination = prompt("Where would you want to go ?");}
+
+
+if( destination === "London" ){
+    destinationPrice = 183;
+}
+else if( destination === "Paris" ){
+    destinationPrice = 220;
+}else {
+    destinationPrice = 300;
+}
+
+return destinationPrice;
+}   
+
+function rentalCarCost(){
+let carDays = prompt("What is the number of days you would like to rent the car ?");
+
+while(carDays == "" || isNaN(carDays)){
+    carDays = prompt("What is the number of days you would like to rent the car ?");}
+    
+    
+    if( carDays > 10 ){
+        carPrice = (carDays*40) - (carDays*40*0.05);
+    }else{
+        carPrice = carDays*40;
+    }
+    
+    return carPrice;
+}
+
+
+function totalVacationCost(){
+
+    hotelCost();
+    planeRideCost();
+    rentalCarCost();
+   
+    let total = hotelPrice + destinationPrice + carPrice;
+    alert(" The cost of your holidays is : " + total + "$ ! ;" +
+                 "\n The car cost is : " + carPrice + "$  ;"+
+                 "\n The hotel cost is : " + hotelPrice + "$  ;"+
+                 "\n The destination cost is : " + destinationPrice +"$  ;")
+}
+totalVacationCost();
