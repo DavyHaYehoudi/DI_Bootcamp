@@ -2,6 +2,7 @@
 //Add a “light blue” background color and some padding to the <div>.
 let nodeDiv = document.querySelector('div');
 nodeDiv.style.backgroundColor = 'lightBlue';
+nodeDiv.style.padding = '20px';
 
 
 //Do not display the first name (John) in the list.
