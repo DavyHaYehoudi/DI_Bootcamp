@@ -1,0 +1,15 @@
+.squareLittle{
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+}
+
+.squareLarger{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(161, 82, 82);
+}
+
+.over{
+    border: 3px dotted rgb(8, 8, 8);
+}
