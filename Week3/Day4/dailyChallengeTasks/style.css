@@ -1,0 +1,88 @@
+*, ::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(#eb3131, #404de0);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    border: 2px black solid;
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1{
+    margin: 50px;
+}
+.cadre{
+    width: 400px;
+}
+form{
+    margin:50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1,form,li{
+    background-color: whitesmoke;
+}
+
+form input{
+    width: 100%;
+    border: none;
+}
+#submit{
+    width: 20%;
+}
+
+input,li{
+    height: 40px;
+}
+li{
+    width: 75%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding: 5px;
+    position: relative;
+}
+
+input::before{
+    content: '';
+    width: 290px;
+    height: 4px;
+    background: rgb(73, 73, 73);
+    position: absolute;
+    bottom: -6px;
+    left:4px;
+   
+}
+ul{
+    list-style: none;
+}
+ul input{
+    margin: 0 5px;
+}
+i{
+    color: red;
+}
+
+p{
+    width: 75%;
+    margin: auto;
+    text-align: end;
+}
+
+#btn{
+    width: 50px;
+    height: 30px;
+    color: red;
+}
