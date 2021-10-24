@@ -1,52 +1,51 @@
 
 // //Exercice 1
-// function q1() {
-//     var a = 5;
-//     if(a > 1) {
-//         a = 3;
-//     }
-//     alert(a);
-// } //a=3
+function q1() {
+    var a = 5;
+    if(a > 1) {
+        a = 3;
+    }
+    alert(a);
+} //a=3
 
 
 // // //#2
-// var a = 0;
-// function q2() {
-//     a = 5;
-// }//a=5
+var a = 0;
+function q2() {
+    a = 5;
+}//a=5
 
-// function q22() {
-//     alert(a);
-// }//a=0
-
-
-
-// // //#3
-// function q3() {
-//     window.a = "hello";
-// }//nothing will happen
+function q22() {
+    alert(a);
+}//a=0
 
 
 
-// function q32() {
-//     alert(a);
-// }//a=0
+// //#3
+function q3() {
+    window.a = "hello";
+}//nothing will happen
+
+
+function q32() {
+    alert(a);
+}//a=0
 
 // // //#4
-// var a = 1;
-// function q4() {
-//     var a = "test";
-//     alert(a);
-// }//a='test'
+var a = 1;
+function q4() {
+    var a = "test";
+    alert(a);
+}//a='test'
 
-// // //#5
-// var a = 2;
-// if (true) {
-//     var a = 5;
-//     alert(a);
-// }
-// alert(a);
-// //a=5 a=5
+// //#5
+var a = 2;
+if (true) {
+    var a = 5;
+    alert(a);
+}
+alert(a);
+//a=5 a=5
 
 
 
@@ -64,7 +63,7 @@ function winBattle(){
 }
 
 let experiencePoints = winBattle ? 10:1;
-// console.log(experiencePoints);
+console.log(experiencePoints);
 
 
 
@@ -74,15 +73,15 @@ let experiencePoints = winBattle ? 10:1;
 
 //Exercice 3
 
-// let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
 //Check if this array includes the color “Violet”.
-// console.log(colors.includes('Violet'));
+console.log(colors.includes('Violet'));
 
 //Write a JavaScript program that displays the colors in the following order : “1# choice is Blue.” “2# choice is Green.” “3# choice is Red.” ect…
-// colors.forEach((color,i)=>{
-//     console.log(`${i+1}# choice is ${color}`);
-// })
+colors.forEach((color,i)=>{
+    console.log(`${i+1}# choice is ${color}`);
+})
 
 
 
@@ -90,21 +89,21 @@ let experiencePoints = winBattle ? 10:1;
 let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 let ordinal = ["th","st","nd","rd"];
 //Write a JavaScript program that displays the colors in the following order : “1st choice is Blue .” “2nd choice is Green.” “3rd choice is Red.” ect…
-// color.forEach((item,i) => {
+color.forEach((item,i) => {
 
-//     if(i===0){
-//         console.log(`${i+1}${ordinal[1]} choice is ${item}`);
-//     }
-//     else if(i===1){
-//         console.log(`${i+1}${ordinal[2]} choice is ${item}`);
-//     }
-//     else if(i===2){
-//         console.log(`${i+1}${ordinal[3]} choice is ${item}`);
-//     }
-//     else {
-//         console.log(`${i+1}${ordinal[0]} choice is ${item}`);
-//     }
-// })
+    if(i===0){
+        console.log(`${i+1}${ordinal[1]} choice is ${item}`);
+    }
+    else if(i===1){
+        console.log(`${i+1}${ordinal[2]} choice is ${item}`);
+    }
+    else if(i===2){
+        console.log(`${i+1}${ordinal[3]} choice is ${item}`);
+    }
+    else {
+        console.log(`${i+1}${ordinal[0]} choice is ${item}`);
+    }
+})
 
 
 //Exercice 5
