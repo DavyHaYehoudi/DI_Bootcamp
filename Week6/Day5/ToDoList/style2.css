@@ -1,0 +1,46 @@
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.back-home{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.5rem;
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+
+.back-home:hover{
+    background-color: rgb(174, 216, 243);
+
+}
+
+.tasks{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task{
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+}
+
+ul{
+    list-style: none;
+    border: 1px solid black;
+    padding: 10px;
+}
+    
+.validity{
+    background-color: chartreuse;
+}
+
+.notValidity{
+    background-color: darkorange;
+}
+
