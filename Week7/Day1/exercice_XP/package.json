@@ -1,0 +1,15 @@
+{
+  "name": "exercice_xp",
+  "version": "1.0.0",
+  "description": "package.json",
+  "main": "npm-node/main.js",
+  "scripts": {
+    "start": "node npm-node/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {}
+}
