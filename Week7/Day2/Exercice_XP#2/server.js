@@ -2,7 +2,8 @@ const express = require('express');
 
 const app = express();
 
-
+const cors = require('cors');
+app.use(cors())
 
 const user = {
     firstname: 'John',
@@ -11,6 +12,7 @@ const user = {
 
 
 app.get('/user', (req,res)=>{
+    console.log('Amichai');
     res.json(user) 
     // res.send(JSON.stringify(user))
 })
