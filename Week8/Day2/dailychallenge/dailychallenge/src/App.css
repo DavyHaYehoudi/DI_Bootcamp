@@ -1,0 +1,27 @@
+
+body {
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  margin: 50px;
+}
+
+.languages {
+  height: 400px;
+  width: 400px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.language {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: rgb(205, 255, 212);
+  border: 1px solid #222;
+  margin: 2px;
+}
